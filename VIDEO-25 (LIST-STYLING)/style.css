@@ -1,0 +1,14 @@
+nav ul li{
+    list-style: devanagari;
+    list-style-type: "😎";
+    list-style-position: inside;
+    background-color: yellow;
+    border: 2px solid black;
+    /* It work */
+    /* list-style-image: url(Screenshot\ 2025-01-16\ 050910.png); */
+
+
+    /* SHORTHAND OF LIST-STYLE */
+    /* It work */
+    /* list-style: circle inside url(Screenshot\ 2025-01-16\ 050910.png); */
+}

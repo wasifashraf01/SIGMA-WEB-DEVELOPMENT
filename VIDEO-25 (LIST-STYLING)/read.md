@@ -1,0 +1,1 @@
+How can insert Emoji on HTML File in [list-style-type: "😍"] press the window key and and colun key which button (;) and take insert an emoji.

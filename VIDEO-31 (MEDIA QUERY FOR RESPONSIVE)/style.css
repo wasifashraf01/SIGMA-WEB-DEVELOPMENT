@@ -1,0 +1,31 @@
+body{
+    background-color: red;
+    color: white;
+}
+.boxes{
+    display: flex;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+    background-color: skyblue;
+}
+@media screen and (orientation: portrait) {
+    .box{
+        border: 2px solid black;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body{
+        background-color: slateblue;
+        color: goldenrod;
+    }
+    .boxes{
+        flex-direction: column;
+    }    
+    .box{
+        background-color: azure;
+    }
+}

@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    width: 120px;
+    height: 120px;
+    margin: 12px;
+    border: 2px solid black;
+}
+.box1{
+    background-color: lightsalmon;
+}
+.box2{
+    background-color: lightgrey;
+}
+.box3{
+    background-color: greenyellow;
+}
+.box4{
+    background-color: hotpink;
+}
+
+/* POSITION RELATIVE and Z-INDEX */
+.box1{
+    /* ia apne parent ke according work karega but parent positioned hona zarori ha agar parent positioned nai hua to ia html ke according work karega. */
+    position: absolute;
+    top: 0px;
+}
+.box2{
+    position: relative;
+    top: 85px;
+    left: 95px;
+}
+.box3{
+    position: relative;
+    z-index: 1;
+}
+
+/* FOR USING PARENT CLASS */
+.parent{
+    margin: 34px;
+    padding: 23px;
+    border: 3px solid gold;
+}
+ol li{
+    display: inline-block;
+    padding: 34px;
+}
+nav{
+    width: 100vw;
+    background-color: #fa9797;
+}
+.boox{
+    top: 0;
+    position: sticky;
+}
+
+

@@ -1,0 +1,18 @@
+.box{
+    padding: 10px;
+    border: 2px solid;
+    box-shadow: 2px 2px 50px 6px #515151;
+    /* box-shadow: x-ofset y-ofset blur spread color; */
+}
+
+.text-element{
+    margin: 20px;
+    padding: 3px 5px 12px 12px;
+    color: blueviolet;
+    text-shadow:2px -1px 1px blueviolet;
+    /* text-shadow: x-ofset y-ofset blur color; */
+    outline: 3px solid blue;
+    outline-offset: 7px;   /* Outline ka apna koi radius nai hota ia border ko follow karti ha*/
+    border: 2px solid black;
+    border-radius: 26px;
+}

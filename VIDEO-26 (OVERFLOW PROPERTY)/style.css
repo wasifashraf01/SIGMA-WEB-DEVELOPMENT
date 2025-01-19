@@ -1,0 +1,22 @@
+.box{
+    width: 20vw;
+    height: 20vh;
+    border: 2px solid black;
+    /* overflow: scroll; */
+    overflow: auto;  /* iska matlab ia ha bychance ia overflow kare to scroll bar lana other wise nai lana  */
+    white-space: nowrap; /* iska mtlab ia ha ke vertically niche ko text nai jae ga agar iski height fixed bhi hogi to is ka text niche nai jae ga  */
+    text-overflow: ellipsis;  /* isko implement karne se dot ayenge jitne text cover hoga bas wohi ayega age ka ni ayega */
+    overflow: clip; /* is ko jab hum laga denge to scroll bhi work nai karega and box me jo width hogi utna hi visible hoga*/
+}
+.box2{
+    border: 2px solid black;
+    margin: 10px;
+    width: 20vw;
+    height: 20vh;
+    /* seprately */
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* short hand for overflow x and y */
+    overflow: (value-of-x) (value-of-y);
+    overflow: scroll hidden;
+}

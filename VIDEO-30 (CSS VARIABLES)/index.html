@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video-30 CSS-Variables</title>
+    <style>
+        :root{
+            --color: rgb(167, 167, 177);
+            --background-color: #fda94e;
+            --sec-color: greenyellow;
+            --solid: rgb(249, 5, 5);
+            --defalt-pad: 50px;
+            --defalt-mar: 8px;
+        }
+        ul{
+            display: inline-block;
+            display: flex;
+            background-color: var(--background-color, rgb(137, 246, 137));
+        }
+        ul li{
+            list-style: none;
+            padding: var(--defalt-pad);
+            margin: var(--defalt-mar);
+            border: 2px solid var(--solid);
+        }
+        ul li:first-child{
+            --color: white;
+            --background-color: orange;
+            color: var(--color);
+            background-color: var(--background-color);
+        }
+        .main{
+            color : var(--color, grey);
+            background-color: var(--sec-color, maroon);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="main">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, nesciunt vero. Aliquid sunt quisquam quas, molestias exercitationem harum maiores odio tempore cumque repellat vero esse! Minus maxime natus iusto beatae hic libero incidunt! Ut id reprehenderit minima repellendus nam eius unde similique est ducimus officiis, non fugit quaerat eligendi omnis corrupti rem accusamus ipsum magni, deleniti, quibusdam itaque ipsa dolore? Itaque veniam expedita illum libero beatae, fuga assumenda sit mollitia quo laborum ipsa magnam saepe eligendi quas temporibus modi perferendis, fugiat molestias perspiciatis excepturi? Pariatur impedit nam modi dolor repellat sed sint corporis veniam culpa. Expedita ab vitae aspernatur illum debitis officia a odit harum quo ipsam doloremque deleniti impedit animi recusandae consectetur laboriosam nostrum, placeat nihil repudiandae similique quas molestiae pariatur maxime voluptatum. Molestiae quam alias, maiores fugit, nemo quis aspernatur tempore corporis ut aliquam, voluptate labore enim. Minima iure quas sunt tempora iste cumque maxime modi non voluptates? Animi quis rerum eveniet, aliquam aut sequi totam natus dolorem error sed atque distinctio aspernatur temporibus? Natus provident tempora fugit illo facilis magnam ut inventore debitis libero sunt assumenda in, sit sapiente officiis ad animi temporibus laborum blanditiis omnis laudantium recusandae dignissimos. Reiciendis, labore consequuntur architecto iusto veniam itaque harum!</p>
+    </div>
+    <footer>
+        <p>I am a "Footer"</p>
+    </footer>
+</body>
+</html>

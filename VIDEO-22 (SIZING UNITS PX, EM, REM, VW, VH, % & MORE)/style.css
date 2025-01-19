@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    border: 2px solid black;
+    width: 100vw;
+    background-color: lightblue;
+}
+.container{
+    background-color: beige;
+    width: 50vw;
+    height: 40vh;
+    border: 2px solid black;
+    margin: 3px auto;
+}
+.new{
+    font-size: 10px;
+}
+.new p{
+    font-size: 2em;
+    border: 2em solid;
+    padding: 3em;
+    margin: 2em;
+}
+.mycont{
+    border: 1rem solid blue;
+    font-size: 3rem;
+}

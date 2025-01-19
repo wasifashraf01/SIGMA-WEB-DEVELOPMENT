@@ -1,0 +1,62 @@
+/* Element selector ka draw back ia ha ke jo selector ke opar style apply kia ha us je all selector ke opar same style apply ho jae ga. */
+/* Element Selector */ 
+div{
+    background-color: red;
+}
+
+/* Class Selector */
+.blue{
+    background-color: blue;
+}
+
+/* Id Selector */
+#green{
+    background-color: green;
+}
+
+/* Its apply style on div direct child */
+/* Child Selector */ 
+div > p{
+    color: white;
+    background-color: black;
+}
+
+/* Div ke andar kahin bhi ho apply ho jae style */
+/* Descendent Selector */
+div p{
+    color: chocolate;
+    background-color: skyblue;
+}
+
+/* isme me ia krna chata hu ke h2 ke baad p ho us ke opr ia style apply karna ha */
+/* Adjacent Selector */
+h2+p{
+    color: orange;
+    background-color: crimson;
+}
+
+
+/* Universal Selector */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Pseudo Selector */
+a:visited{
+    color: chartreuse;
+}
+a:link{
+    color: cornflowerblue;
+}
+a:active{
+    background-color: red;
+}
+a:hover{
+    background-color: blueviolet;
+}
+/* p ka first child ka color darkblue kar do */
+p:first-child{
+    color: yellow;
+    background-color: rgb(255, 138, 138);
+}

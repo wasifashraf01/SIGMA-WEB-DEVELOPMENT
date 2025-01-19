@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-SPECIFICITY</title>
+    <style>
+        h1{
+            color: yellow;
+        }
+        .red{
+            color: red;
+        }
+        .green{
+            color: green;
+        }
+        .purple{
+            color: purple;
+        }
+        [data-x="as"]{
+            background-color: #abaaaa;
+        }
+        p.next{
+            color: cadetblue !important;
+        }
+        </style>
+</head>
+<body>
+    <h1 class="red green purple" data-x="as">CSS-SPECIFICITY</h1>
+    <p><strong>Specificity:</strong> Inlinestyle > Idselector > Class & Attribute selector > Elementselector > Univeralselector  </p>
+    <p style="color: blue" class="next">Inline se bhi zida high specefic (! important-ha)</p>
+    <h3>How I Calculate Specificity</h3>
+    <ul>
+        <li>Universal-Selector === 0</li>
+        <li>Element-Selector and Pseudo Element === 1</li>
+        <li>Class-Selector and Attribute-Selector === 10</li>
+        <li>Id-Selector === 100</li>
+        <li>Inline-Style === 1000</li>
+        <li>Can you add an (!important). It take point of ==== 10000</li>
+    </ul>
+</body>
+</html>
