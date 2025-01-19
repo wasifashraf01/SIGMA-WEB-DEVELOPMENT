@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video-33 Muti Color Website</title>
+    <style>
+        :root{
+            --bgc: grey;
+            --first: black;
+            --second: rgb(168, 2, 2);
+            --third: crimson;
+            --four: rgb(74, 59, 37);
+            --text: magenta;
+            --defpad: 18px;
+            --defmar: 8px;
+            --border: 1px solid black;
+            --rad: 15px;
+            --hover: 300px;
+            --hover-text: white;
+        }
+        nav{
+            background-color: var(--bgc);
+            height: 6vw;
+            width: 100%;
+        }
+        ul li:hover{
+            width: var(--hover);
+            color: var(--hover-text);
+        }
+        ul li{
+            display: inline-block;
+            color: var(--text);
+            padding: var(--defpad);
+            margin: var(--defmar);
+            border: var(--border);
+            border-radius: var(--rad);
+        }
+        #item1{
+            background-color: var(--first);
+        }
+        #item2{
+            background-color: var(--second);
+        }
+        #item3{
+            background-color: var(--third);
+        }
+        #item4{
+            background-color: var(--four);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li id="item1">Home</li>
+            <li id="item2">About</li>
+            <li id="item3">Contact</li>
+            <li id="item4">Services</li>
+        </ul>
+    </nav>
+</body>
+</html>
